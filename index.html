@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Project 1</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+<div class="topdiv">
+<h1 class="icon">Nintendo</h1>
+<h2 class="itemDisplay">0 Item(s) Checked</h2>
+<div class="topdiv2">
+<h3 class="hrtext"><a href="#switchGames">Nintendo Switch</a></h3>
+<h3 class="hrtext"><a href="#dsGames">Nintendo 3DS/2DS</a></h3>
+<h3 class="hrtext"><a href="https://www.amazon.com/nintendomerch" target="_blank">Merchandise</a></h3>
+</div>
+</div>
+
+<div class="slideshow1">
+  <div class="slide-wrapper1">
+    <div class="slide1">$10 off on digital copies!</div>
+    <div class="slide1">Reserve your next console by preordering. <i>Limited quantity!</i></div>
+    <div class="slide1">Sick of delivery fees? We offer in-store pickups.</div>
+  </div>
+</div>
+
+<div class="imgCont">
+<img src="images/ac.jpg" alt="Animal Crossing Picture" class="textImg">
+<p class="boxTxt">Enjoy a lovely vacation on an island where relaxation is the norm in Animal Crossing New Horizons. Decorate your house, terraform your island, collect rare wildlife, make new friends, and pay off a crippling debt! Up to four players can join eachother on a single island.</p>
+</div>
+
+<div class="imgCont">
+<img src="images/xb2.jpg" alt="Xenoblade Chronicles 2 Picture" class="textImg2">
+<p class="boxTxt2">Explore a fantasy world like no other in Xenoblade Chronicles 2. Uncover the history of lands divided by clouds and forge bonds with living weapons called blades! </p>
+</div>
+
+<h1 class="pHeaders" id="switchGames">Top Switch Games</h1>
+<hr>
+
+
+<form class="form1" action="checkout.html" method="get" id="theForm" target="_blank">
+ <div class="tripleProduct">
+  <div class="product"><img class= "pImgCont" src="images/acp.jpg" alt=""><h4 class="productName">Animal Crossing New Horizons</h4><h5 class="productText">Social Simulation Game</h5><h4 class="productName">$59.99</h4>
+<a href="#mWindow" class="open">Add to Cart</a>
+<div class="mBack" id="mWindow"> <div class="mFront"><a href="#" class="close">X</a>   <div class="mImgCont"><img src="images/acp.jpg" alt="Animal Crossing" title="Animal Crossing New Horizons"></div>       <div class="info">
+<p>Animal Crossing New Horizons</p>
+<p>Sandbox, simulation, social, multiplayer</p>
+<p>A collection, housing, vacation, and debt simulator all in one.</p>
+<span class="price">$59.99</span><hr>
+<label for="checkout_bt">
+<input type="hidden" value="59.99" id="product_price">
+<input type="hidden" value="Animal Crossing New Horizons" id="product_name">
+<input type="hidden" value="images/acp.jpg" id="product_img">
+  <input type="submit" name="submit_bt" id="submit_bt" value="Checkout" class="add" onclick="passvalues1();">
+</label>
+         </div> </div>
+  </div></div>
+  <div class="product"><img class= "pImgCont" src="images/xb2p.jpg" alt="">
+    <h4 class="productName">Xenoblade Chronicles 2</h4><h5 class="productText">Fantasy JRPG</h5><h4 class="productName">$59.99</h4>
+    <a href="#mWindow2" class="open">Add to Cart</a>
+    <div class="mBack" id="mWindow2"> <div class="mFront"><a href="#" class="close">X</a>   <div class="mImgCont"><img src="images/xb2p.jpg" alt="Xenoblade 2" title="Xenoblade Chronicles 2"></div>       <div class="info">
+    <p>Xenoblade Chronicles 2</p>
+    <p>Fantasy, rpg, strategy, singleplayer</p>
+    <p>A fantasy journey to meet the world's creator.</p>
+    <span class="price">$59.99</span><hr>
+
+    <label for="checkout_bt">
+    <input type="hidden" value="59.99" id="product_price2">
+    <input type="hidden" value="Xenoblade Chronicles 2" id="product_name2">
+    <input type="hidden" value="images/xb2p.jpg" id="product_img2">
+      <input type="submit" name="submit_bt" id="submit_bt" value="Checkout" class="add" onclick="passvalues2();">
+    </label>
+
+
+           </div> </div>
+  </div></div>
+  <div class="product"><img class= "pImgCont" src="images/mop.jpg" alt="">
+    <h4 class="productName">Super Mario Odyssey</h4><h5 class="productText">3D Action Platformer</h5><h4 class="productName">$59.99</h4>
+    <a href="#mWindow3" class="open">Add to Cart</a>
+    <div class="mBack" id="mWindow3"> <div class="mFront"><a href="#" class="close">X</a>   <div class="mImgCont"><img src="images/mop.jpg" alt="Animal Crossing" title="Animal Crossing New Horizons"></div>       <div class="info">
+    <p>Super Mario Odyssey</p>
+    <p>3D Platformer, adventure, singleplayer</p>
+    <p>Mario's newest adventure featuring a new sentient hat.</p>
+    <span class="price">$59.99</span><hr>
+    <label for="checkout_bt">
+    <input type="hidden" value="59.99" id="product_price3">
+    <input type="hidden" value="Super Mario Odyssey" id="product_name3">
+    <input type="hidden" value="images/mop.jpg" id="product_img3">
+      <input type="submit" name="submit_bt" id="submit_bt" value="Checkout" class="add" onclick="passvalues3();">
+    </label>
+           </div> </div>
+  </div></div>
+ </div>
+
+ <h1 class="pHeaders" id="dsGames">Top 3DS/2DS Games</h1>
+ <hr>
+
+  <div class="tripleProduct">
+   <div class="product"><img class= "pImgCont2" src="images/fep.jpg" alt=""><h4 class="productName">FE Fates: Conquest</h4><h5 class="productText">2D Grid Strategy RPG</h5><h4 class="productName">$29.99</h4>
+ <a href="#mWindow4" class="open">Add to Cart</a>
+ <div class="mBack" id="mWindow4"> <div class="mFront"><a href="#" class="close">X</a>   <div class="mImgCont2"><img src="images/fep.jpg" alt="Animal Crossing" title="Fire Emblem Fates: Conquest"></div>       <div class="info">
+ <p>Fire Emblem Fates: Conquest</p>
+ <p>Strategy, RPG, singleplayer</p>
+ <p>Challenge yourself and form new strategies in this tactical rpg.</p>
+ <span class="price">$29.99</span><hr>
+ <label for="checkout_bt">
+ <input type="hidden" value="29.99" id="product_price4">
+ <input type="hidden" value="Fire Emblem Fates: Conquest" id="product_name4">
+   <input type="hidden" value="images/fep.jpg" id="product_img4">
+   <input type="submit" name="submit_bt" id="submit_bt" value="Checkout" class="add" onclick="passvalues4();">
+ </label>
+          </div> </div>
+   </div></div>
+   <div class="product"><img class= "pImgCont2" src="images/smp.jpg" alt="">
+     <h4 class="productName">Super Smash Bros</h4><h5 class="productText">Multiplayer Action Combat</h5><h4 class="productName">$29.99</h4>
+     <a href="#mWindow5" class="open">Add to Cart</a>
+     <div class="mBack" id="mWindow5"> <div class="mFront"><a href="#" class="close">X</a>   <div class="mImgCont2"><img src="images/smp.jpg" alt="Xenoblade 2" title="Xenoblade Chronicles 2"></div>       <div class="info">
+     <p>Super Smash Bros</p>
+     <p>Action, combat, competitive, multiplayer</p>
+     <p>Play as beloved game characters in this all-out brawl of the ages.</p>
+     <span class="price">$29.99</span><hr>
+     <label for="checkout_bt">
+     <input type="hidden" value="29.99" id="product_price5">
+     <input type="hidden" value="Super Smash Bros" id="product_name5">
+     <input type="hidden" value="images/smp.jpg" id="product_img5">
+       <input type="submit" name="submit_bt" id="submit_bt" value="Checkout" class="add" onclick="passvalues5();">
+     </label>
+            </div> </div>
+   </div></div>
+   <div class="product"><img class= "pImgCont2" src="images/kp.jpg" alt="">
+     <h4 class="productName">Kirby Triple Deluxe</h4><h5 class="productText">3D Action Platformer</h5><h4 class="productName">$29.99</h4>
+     <a href="#mWindow6" class="open">Add to Cart</a>
+     <div class="mBack" id="mWindow6"> <div class="mFront"><a href="#" class="close">X</a>   <div class="mImgCont2"><img src="images/kp.jpg" alt="Animal Crossing" title="Animal Crossing New Horizons"></div>       <div class="info">
+     <p>Kirby Triple Deluxe</p>
+     <p>2D Platformer, adventure, singleplayer</p>
+     <p>Copy new abilities and save Dreamland in Kirby Triple Deluxe.</p>
+     <span class="price">$29.99</span><hr>
+     <label for="checkout_bt">
+     <input type="hidden" value="29.99" id="product_price6">
+     <input type="hidden" value="Kirby Triple Deluxe" id="product_name6">
+     <input type="hidden" value="images/kp.jpg" id="product_img6">
+       <input type="submit" name="submit_bt" id="submit_bt" value="Checkout" class="add" onclick="passvalues6();">
+     </label>
+            </div> </div>
+   </div></div>
+  </div>
+</form>
+
+<div class="contactDiv">
+<div class="cDiv1">
+
+  <div class="cdivS"><p>Help</p> <p>Customer Service</p> <p>Live Chat</p></div>
+  <div class="cdivS"><p>Account</p><p>Your Account</p><p>Order Status</p></div>
+  <div class="cdivS"><p>Subscribe</p><p>Emails</p><p>Store Offer and Events</p></div>
+   <div class="cdivS"><p>Online Membership</p><p>Learn More</p><p>Pay My Bill</p></div>
+
+</div>
+<hr>
+<div class="cDiv2">
+<a href="https://www.facebook.com/Nintendo/"><img src="images/icons/facebook.png" alt=""></a>
+<a href="https://twitter.com/NintendoAmerica?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/icons/twitter.png" alt=""></a>
+<a href="https://www.youtube.com/c/nintendo/videos"><img src="images/icons/youtube.png" alt=""></a>
+<a href="https://www.instagram.com/nintendo/?hl=en"><img src="images/icons/instagram.png" alt=""></a>
+<a href="https://www.reddit.com/r/nintendo/"><img src="images/icons/reddit.png" alt=""></a>
+</div>
+<h4 class="crHeader">Copyright @ Joshua Wang 2022</h4>
+</div>
+
+<div class="scrollTop">
+  <a href="#" class="linkTop" > <img src="images/icons/toTop.png">  </a>
+</div>
+
+<script src="index.js">  </script>
+  </body>
+</html>

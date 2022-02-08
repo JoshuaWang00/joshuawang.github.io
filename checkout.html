@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="checkout.css">
+    <title>Nintendo Store Checkout</title>
+  </head>
+  <body>
+
+
+
+<h1 style="text-align:center;">Thank you for your purchase!</h1>
+<h2>
+<span id="productName"></span>
+
+</h2>
+<img id="productImg"  src="images/kp.jpg" alt="" width="350px" height="400px">
+<h3>
+<i>Sold for $<span id="productPrice"></span></i>
+</h3>
+<hr>
+
+<a href="index.html" class="backbt">Return to Store</a>
+
+
+<script type="text/javascript">
+  let d = document.querySelector('#productName');
+  d.innerHTML = localStorage.getItem('product_name');
+  let f = document.querySelector('#productPrice');
+  f.innerHTML = localStorage.getItem('product_price');
+
+  document.getElementById('productImg').src = localStorage.getItem('product_img');
+</script>
+  </body>
+</html>
